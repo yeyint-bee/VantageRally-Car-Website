@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+     <!-- Navigation Section-->
+     <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="Home.html"><i class="fa-solid fa-car"></i> Vintage<span id="c">Rally</span></a></div>
+                <ul class="links">
+                    <li><a href="Home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="AboutUS.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                    <li><a href="ContactUs.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                    <li>
+                        <a href="RegisterOnline.html" class="desktop-link"><i class="fa-solid fa-cash-register"></i> Register</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Register</label>
+                        <ul>
+                            <li><a href="login.html"><i class="fa-solid fa-lock"></i> Log In</a></li>
+                            <li><a href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="Q&A.html"><i class="fa-solid fa-question"></i> Q&A</a></li>
+                    <li><a href="OurDrivers.html"><i class="fa-solid fa-users"></i> Drivers</a></li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon"><i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+        </nav>
+    </div>
+
+
+    <div class="top-section-register-signup">
+        <h1>Sign <span id="h">Up</span> Now</h1>
+    </div>
+
+    <div class="form-container">
+        <h3 class="sub_h3">What You Waiting For? Join The Family!!!</h3>
+        <form action="/action_page.php">
+            <label for="fname"><i class="fa-solid fa-address-card"></i> Full Name :</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter Full Name...">
+            <label for="password"><i class="fa-regular fa-envelope"></i> Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter Valid Email...">
+            <label for="selectCountry"><i class="fa-regular fa-flag"></i> Select Your Country :</label>
+            <select name="country" id="selectCountry">
+                <option value="Myanmar">Myanmar</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Singapore">Singapore</option>
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="China">China</option>
+                <option value="South Korea">South Korea</option>
+                <option value="North Korea">North Korea</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Iran">Iran</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Laos">Laos</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Brunei">Brunei</option>
+            </select>
+            <label for="username"><i class="fa-solid fa-user"></i> UserName :</label>
+            <input type="text" id="username" name="username" placeholder="Enter A Username...">
+            <label for="password"><i class="fa-solid fa-key"></i> Password :</label>
+            <input type="password" id="password" name="password" placeholder="Enter A Password...">
+            <label for="password"><i class="fa-solid fa-key"></i> Re-Enter Password :</label>
+            <input type="password" id="repassword" name="password" placeholder="Re-Enter A Password...">
+            <label for="code"><i class="fa-solid fa-code"></i> Code :</label>
+            <input type="text" id="code" name="code" placeholder="Enter Code Here e.g: QID45JS A3R44F 5FJSO...">
+            <div class="submit-button">
+                <input type="submit" onclick="sentAlert()" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>Vintage-Rally-Club</h3>
+            <P>Welcome to vintage rally club whereby we let the people choose the race etc. We do exclusive races and wonderful communities that help you enjoy your time at Vintage Rally Club. </P>
+            <p></p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function sentAlert(){
+            alert("Successfully Sent Message!")
+        }
+    </script>
+    
+</body>
+</html>
